@@ -10,7 +10,7 @@ import villagegaulois.IEtal;
 public class ScenarioTest {
 	public static void main(String[] args) {
 		/*
-		Gaulois obelix = new Gaulois("Obélix", 20);
+		Gaulois obelix = new Gaulois("Obï¿½lix", 20);
 		
 		Sanglier s = new Sanglier(15, obelix);
 		Poisson p = new Poisson("mardi");
@@ -27,8 +27,8 @@ public class ScenarioTest {
 		etals[0].occuperEtal(obelix, p, 10);
 		*/
 		
-		Gaulois ordralfabetix = new Gaulois("Ordralfabétix",9); 
-		Gaulois obelix = new Gaulois("Obélix", 20);
+		Gaulois ordralfabetix = new Gaulois("Ordralfabï¿½tix",9); 
+		Gaulois obelix = new Gaulois("Obï¿½lix", 20);
 		Gaulois asterix = new Gaulois("Asterix",6); 
 		
 		Sanglier sanglier1 = new Sanglier(2000, obelix); 
@@ -48,5 +48,19 @@ public class ScenarioTest {
 		etalSangliersObelix.installerVendeur(obelix, sangliersObelix, 8);
 		etalSangliersAsterix.installerVendeur(asterix, sangliersAsterix, 10);
 		etalPoissons.installerVendeur(ordralfabetix, poissons, 7);
+		
+		
+		System.out.println("ETAT MARCHE");
+		System.out.println(etalSangliersObelix.etatEtal());
+		System.out.println(etalSangliersAsterix.etatEtal());
+		System.out.println(etalPoissons.etatEtal());
+		
+		System.out.println("A l'Ã©tal 0 je paye "+etalSangliersObelix.acheterProduit(1)+" sous.");
+		System.out.println("A l'Ã©tal 1 je paye "+etalSangliersAsterix.acheterProduit(2)+" sous.");
+
+		System.out.println("ETAT MARCHE");
+		System.out.println(etalSangliersObelix.etatEtal());
+		System.out.println(etalSangliersAsterix.etatEtal());
+		System.out.println(etalPoissons.etatEtal());
 	}
 }

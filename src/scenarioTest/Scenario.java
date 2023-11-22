@@ -1,13 +1,30 @@
 package scenarioTest;
 
 import personnages.Gaulois;
+import produit.Poisson;
+import produit.Produit;
+import produit.Sanglier;
+import villagegaulois.IVillage;
+import villagegauloisold.DepenseMarchand;
 import villagegauloisold.Etal;
 
 public class Scenario {
 
 	public static void main(String[] args) {
 
-		// TODO Partie 4 : creer de la classe anonyme Village
+		private static class Village implements IVillage {
+			
+			@Override
+			public <P extends Produit> boolean installerVendeur(Etal<P> etal, Gaulois vendeur, P[] produit, int prix) {
+				
+			}
+			
+			@Override
+			public DepenseMarchand[] acheterProduit(String produit, int quantiteSouhaitee) {
+				
+			}
+		}
+
 
 		// fin
 

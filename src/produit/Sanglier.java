@@ -19,7 +19,7 @@ public class Sanglier extends Produit{
 		chaine.append(" de ");
 		chaine.append(poids);
 		chaine.append(unite.toString());
-		chaine.append(" chassé par ");
+		chaine.append(" chassï¿½ par ");
 		chaine.append(chasseur.getNom());
 		return chaine.toString();
 	}

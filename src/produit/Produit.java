@@ -17,4 +17,9 @@ public abstract class Produit implements IProduit {
 	
 	@Override
 	public abstract String decrireProduit();
+	
+	@Override
+	public float calculerPrix(int prix) {
+		return prix;
+	}
 }
